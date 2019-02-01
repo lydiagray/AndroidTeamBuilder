@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/smbc-team-builder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="SMBC Team Builder"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/label-1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="28dp"
+        android:text="How many teams?"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/numberOfTeams"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/numberOfTeams"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="34dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/label-2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/label-1"
+        app:layout_constraintTop_toBottomOf="@+id/smbc-team-builder" />
+
+    <CheckBox
+        android:id="@+id/jonC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:text="Jon Chiles"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label-2" />
+
+    <CheckBox
+        android:id="@+id/lukaszR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Lukasz Romerowicz"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jonC" />
+
+    <CheckBox
+        android:id="@+id/davidM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="18dp"
+        android:text="David Meek"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toEndOf="@+id/lukaszR"
+        app:layout_constraintTop_toBottomOf="@+id/label-2" />
+
+    <CheckBox
+        android:id="@+id/colinL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Colin Lees"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@+id/davidM"
+        app:layout_constraintTop_toBottomOf="@+id/davidM" />
+
+    <CheckBox
+        android:id="@+id/elliottH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Elliott Humphries"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lukaszR" />
+
+    <CheckBox
+        android:id="@+id/joshH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Josh Hiles"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/elliottH" />
+
+    <CheckBox
+        android:id="@+id/lydiaG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Lydia Gray"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@+id/joshA"
+        app:layout_constraintTop_toBottomOf="@+id/joshA" />
+
+    <CheckBox
+        android:id="@+id/stephenL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="21dp"
+        android:text="Stephen Lally"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/joshH" />
+
+    <CheckBox
+        android:id="@+id/simonE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:text="Simon Estell"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/jordanB"
+        app:layout_constraintStart_toStartOf="@+id/jordanB" />
+
+    <CheckBox
+        android:id="@+id/priyaG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:text="Priya Ganger"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stephenL" />
+
+    <CheckBox
+        android:id="@+id/jordanB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:text="Jordan Burns"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/priyaG"
+        app:layout_constraintStart_toStartOf="@+id/buildTeam"
+        app:layout_constraintTop_toTopOf="@+id/priyaG" />
+
+    <CheckBox
+        android:id="@+id/joshA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Josh Adesoba"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@+id/colinL"
+        app:layout_constraintTop_toBottomOf="@+id/colinL" />
+
+    <TextView
+        android:id="@+id/label-2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Select the people to include:"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label-1" />
+
+    <Button
+        android:id="@+id/buildTeam"
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@color/colorPrimary"
+        android:onClick="build"
+        android:text="Build team"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jordanB" />
+
+</android.support.constraint.ConstraintLayout>
